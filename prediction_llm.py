@@ -41,6 +41,7 @@ exemples_txt = exemples.to_csv(index=False)
 
 passagers_test = df.loc[X_test.index, features]
 api_key =  os.getenv("GROQ_API_KEY")
+
 if not api_key:
     raise RuntimeError(
         "Clé Groq absente. Définis la variable d'environnement GROQ_API_KEY."
